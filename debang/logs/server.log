@@ -1,0 +1,903 @@
+[2018-06-23 09:55:44,498][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 09:55:44,500][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 09:55:44,501][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT VERSION(); args=None
+[2018-06-23 09:55:44,565][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 09:55:44,568][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 09:55:44,581][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.009) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 09:56:09,317][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/resolvers.py", line 523, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': '', 'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'download_excel.urls' from '/home/python/Desktop/mianshi/debang/download_excel/urls.py'> (None:None) '^'>, <URLPattern '^upload'>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+[2018-06-23 09:56:09,329][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py] [line:93] [base] Not Found: /
+[2018-06-23 09:56:09,333][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 404 2076
+[2018-06-23 09:56:09,624][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/resolvers.py", line 523, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'download_excel.urls' from '/home/python/Desktop/mianshi/debang/download_excel/urls.py'> (None:None) '^'>, <URLPattern '^upload'>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+[2018-06-23 09:56:09,625][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py] [line:93] [base] Not Found: /favicon.ico
+[2018-06-23 09:56:09,629][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /favicon.ico HTTP/1.1" 404 2127
+[2018-06-23 09:56:25,318][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /upload HTTP/1.1" 200 395
+[2018-06-23 10:13:10,459][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 10:13:10,460][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 10:13:10,462][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT VERSION(); args=None
+[2018-06-23 10:13:10,500][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 10:13:10,509][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.008) SHOW FULL TABLES; args=None
+[2018-06-23 10:13:10,519][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 10:13:14,383][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /index HTTP/1.1" 200 395
+[2018-06-23 10:55:54,632][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 10:55:54,633][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 10:55:54,640][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 10:55:54,681][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 10:55:54,693][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.012) SHOW FULL TABLES; args=None
+[2018-06-23 10:55:54,703][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 11:24:36,829][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 11:24:36,833][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:24:36,847][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.004) SELECT VERSION(); args=None
+[2018-06-23 11:24:36,958][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:24:36,961][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SHOW FULL TABLES; args=None
+[2018-06-23 11:24:36,974][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.005) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 11:24:41,766][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /index HTTP/1.1" 200 1326
+[2018-06-23 11:24:46,271][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /index HTTP/1.1" 200 1326
+[2018-06-23 11:25:01,903][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /index HTTP/1.1" 200 1326
+[2018-06-23 11:28:01,375][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.005) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 11:28:01,376][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:28:01,376][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 11:28:01,468][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:28:01,478][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.007) SHOW FULL TABLES; args=None
+[2018-06-23 11:28:01,496][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.010) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 11:28:08,709][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /index HTTP/1.1" 200 1326
+[2018-06-23 11:28:57,930][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 11:28:57,933][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:28:57,933][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 11:28:58,009][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:28:58,011][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 11:28:58,022][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 11:29:08,715][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /index HTTP/1.1" 200 1326
+[2018-06-23 11:37:55,121][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 11:37:55,121][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:37:55,122][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 11:37:55,182][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:37:55,183][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 11:37:55,186][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 11:42:17,362][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 11:42:17,364][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:42:17,365][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 11:42:17,413][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:42:17,415][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 11:42:17,418][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 11:43:57,323][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /index HTTP/1.1" 200 1340
+[2018-06-23 11:44:01,285][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /index HTTP/1.1" 200 1340
+[2018-06-23 11:44:39,772][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 11:44:39,777][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:44:39,777][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 11:44:39,865][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:44:39,874][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SHOW FULL TABLES; args=None
+[2018-06-23 11:44:39,881][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 11:44:55,508][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /index HTTP/1.1" 200 1340
+[2018-06-23 11:45:08,370][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /index HTTP/1.1" 200 1340
+[2018-06-23 11:59:12,641][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 11:59:12,642][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:59:12,643][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 11:59:12,737][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 11:59:12,738][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 11:59:12,748][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 11:59:14,341][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /index HTTP/1.1" 200 1340
+[2018-06-23 11:59:35,001][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /index HTTP/1.1" 200 1340
+[2018-06-23 12:36:31,189][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /index HTTP/1.1" 200 1057
+[2018-06-23 12:41:14,762][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /index HTTP/1.1" 200 383
+[2018-06-23 12:43:18,174][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py] [line:118] [exception] Internal Server Error: /upload
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/Desktop/mianshi/debang/download_excel/views.py", line 18, in upload
+    print(request.url)
+AttributeError: 'WSGIRequest' object has no attribute 'url'
+[2018-06-23 12:43:18,292][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /upload HTTP/1.1" 500 72455
+[2018-06-23 12:50:06,527][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.007) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 12:50:06,529][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 12:50:06,530][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT VERSION(); args=None
+[2018-06-23 12:50:06,615][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 12:50:06,647][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.025) SHOW FULL TABLES; args=None
+[2018-06-23 12:50:06,679][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.024) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 12:50:09,410][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py] [line:118] [exception] Internal Server Error: /index
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/Desktop/mianshi/debang/download_excel/views.py", line 13, in index
+    return render(request,"send_excel.html")
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'upload' not found. 'upload' is not a valid view function or pattern name.
+[2018-06-23 12:50:09,576][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /index HTTP/1.1" 500 121273
+[2018-06-23 12:50:32,782][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 12:50:32,784][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 12:50:32,784][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 12:50:32,833][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 12:50:32,836][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SHOW FULL TABLES; args=None
+[2018-06-23 12:50:32,849][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.011) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 12:50:54,951][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 12:50:54,953][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 12:50:54,953][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 12:50:55,001][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 12:50:55,002][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 12:50:55,007][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:24:58,622][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 13:24:58,624][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:24:58,625][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 13:24:58,723][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:24:58,724][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 13:24:58,737][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.010) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:28:41,693][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 13:28:41,698][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:28:41,704][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 13:28:41,784][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:28:41,787][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SHOW FULL TABLES; args=None
+[2018-06-23 13:28:41,796][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:29:56,259][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 13:29:56,260][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:29:56,260][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 13:29:56,309][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:29:56,311][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 13:29:56,317][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:29:59,985][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/resolvers.py", line 523, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': '', 'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'download_excel.urls' from '/home/python/Desktop/mianshi/debang/download_excel/urls.py'> (None:None) '^'>, <URLPattern '^index'>], [<URLResolver <module 'download_excel.urls' from '/home/python/Desktop/mianshi/debang/download_excel/urls.py'> (None:None) '^'>, <URLPattern '^upload'>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+[2018-06-23 13:30:00,005][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py] [line:93] [base] Not Found: /
+[2018-06-23 13:30:00,010][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 404 2230
+[2018-06-23 13:30:00,475][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/resolvers.py", line 523, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'download_excel.urls' from '/home/python/Desktop/mianshi/debang/download_excel/urls.py'> (None:None) '^'>, <URLPattern '^index'>], [<URLResolver <module 'download_excel.urls' from '/home/python/Desktop/mianshi/debang/download_excel/urls.py'> (None:None) '^'>, <URLPattern '^upload'>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+[2018-06-23 13:30:00,488][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py] [line:93] [base] Not Found: /favicon.ico
+[2018-06-23 13:30:00,502][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /favicon.ico HTTP/1.1" 404 2281
+[2018-06-23 13:30:06,131][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'what' in template 'send_excel.html'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [what] in [{'None': None, 'False': False, 'True': True}, {'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb9f993d630>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fb9f9904378>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb9f9942748>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20}, 'request': <WSGIRequest: GET '/index'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb9f996db70>>}, {}]
+[2018-06-23 13:30:06,190][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py] [line:118] [exception] Internal Server Error: /index
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/Desktop/mianshi/debang/download_excel/views.py", line 14, in index
+    return render(request,"send_excel.html")
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'upload' not found. 'upload' is not a valid view function or pattern name.
+[2018-06-23 13:30:06,366][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /index HTTP/1.1" 500 119180
+[2018-06-23 13:30:13,019][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'what' in template 'send_excel.html'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [what] in [{'None': None, 'False': False, 'True': True}, {'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb9f96b43c8>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fb9f990bd08>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb9f96b4cf8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20}, 'request': <WSGIRequest: GET '/index'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb9f990bea0>>}, {}]
+[2018-06-23 13:30:13,043][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py] [line:118] [exception] Internal Server Error: /index
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/Desktop/mianshi/debang/download_excel/views.py", line 14, in index
+    return render(request,"send_excel.html")
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'upload' not found. 'upload' is not a valid view function or pattern name.
+[2018-06-23 13:30:13,369][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /index HTTP/1.1" 500 119315
+[2018-06-23 13:30:28,809][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'what' in template 'send_excel.html'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [what] in [{'None': None, 'False': False, 'True': True}, {'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb9ff3e4da0>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fb9f96ad158>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb9f96cb518>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20}, 'request': <WSGIRequest: GET '/index'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb9f990be18>>}, {}]
+[2018-06-23 13:30:28,810][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py] [line:118] [exception] Internal Server Error: /index
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/Desktop/mianshi/debang/download_excel/views.py", line 14, in index
+    return render(request,"send_excel.html")
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'upload' not found. 'upload' is not a valid view function or pattern name.
+[2018-06-23 13:30:28,942][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /index HTTP/1.1" 500 119180
+[2018-06-23 13:32:04,705][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.006) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 13:32:04,706][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:32:04,707][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT VERSION(); args=None
+[2018-06-23 13:32:04,793][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:32:04,802][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.009) SHOW FULL TABLES; args=None
+[2018-06-23 13:32:04,817][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.010) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:32:07,264][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'what' in template 'send_excel.html'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [what] in [{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/index'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f9ad563cc80>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7f9ad563cae8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f9ad4216358>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'ERROR': 40, 'DEBUG': 10, 'SUCCESS': 25, 'INFO': 20}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f9ad56421d0>}, {}]
+[2018-06-23 13:32:07,268][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'form' in template 'send_excel.html'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [form] in [{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/index'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f9ad563cc80>>, 'csrf_token': <SimpleLazyObject: 'iKKgepUDq3hxqhrVuuwva1wWKZEM2uAlQnc4OlcDy7gCGwczvOLUqO09jdE0AKU8'>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f9ad4216358>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'ERROR': 40, 'DEBUG': 10, 'SUCCESS': 25, 'INFO': 20}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f9ad56421d0>}, {}]
+[2018-06-23 13:32:07,292][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /index HTTP/1.1" 200 755
+[2018-06-23 13:32:16,640][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py] [line:118] [exception] Internal Server Error: /upload
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view download_excel.views.upload didn't return an HttpResponse object. It returned None instead.
+[2018-06-23 13:32:16,768][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /upload HTTP/1.1" 500 61659
+[2018-06-23 13:32:47,103][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 13:32:47,104][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:32:47,105][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 13:32:47,144][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:32:47,145][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 13:32:47,149][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:32:50,335][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/resolvers.py", line 523, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': '', 'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'download_excel.urls' from '/home/python/Desktop/mianshi/debang/download_excel/urls.py'> (None:None) '^'>, <URLPattern '^index'>], [<URLResolver <module 'download_excel.urls' from '/home/python/Desktop/mianshi/debang/download_excel/urls.py'> (None:None) '^'>, <URLPattern '^upload'>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+[2018-06-23 13:32:50,348][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py] [line:93] [base] Not Found: /
+[2018-06-23 13:32:50,352][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 404 2230
+[2018-06-23 13:33:18,434][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 13:33:18,441][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.004) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:33:18,442][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 13:33:18,550][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:33:18,551][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 13:33:18,557][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:34:30,170][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'what' in template 'send_excel.html'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [what] in [{'True': True, 'None': None, 'False': False}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fcf0ac51510>>, 'request': <WSGIRequest: GET '/index'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fcf0d03e2f0>>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'DEBUG': 10, 'INFO': 20, 'ERROR': 40, 'SUCCESS': 25}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fcf099e4080>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fcf0ac4fe10>}, {}]
+[2018-06-23 13:34:30,226][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET /index HTTP/1.1" 200 649
+[2018-06-23 13:34:38,089][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'what' in template 'send_excel.html'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [what] in [{'True': True, 'None': None, 'False': False}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fcf099e9e18>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fcf099e9d90>>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'DEBUG': 10, 'INFO': 20, 'ERROR': 40, 'SUCCESS': 25}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fcf099e4da0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fcf099e4080>}, {}]
+[2018-06-23 13:34:38,093][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 649
+[2018-06-23 13:34:47,293][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/middleware/csrf.py] [line:153] [csrf] Forbidden (CSRF token missing or incorrect.): /upload
+[2018-06-23 13:34:47,385][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /upload HTTP/1.1" 403 2513
+[2018-06-23 13:35:18,099][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'what' in template 'send_excel.html'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [what] in [{'True': True, 'None': None, 'False': False}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fcf0d03e2f0>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fcf0ac51510>>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'DEBUG': 10, 'INFO': 20, 'ERROR': 40, 'SUCCESS': 25}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fcf0fe97cc0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fcf0ac4f5c0>}, {}]
+[2018-06-23 13:35:18,120][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 789
+[2018-06-23 13:35:36,093][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 13:35:36,096][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:35:36,096][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 13:35:36,196][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:35:36,210][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.014) SHOW FULL TABLES; args=None
+[2018-06-23 13:35:36,228][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.007) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:35:37,318][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'what' in template 'send_excel.html'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [what] in [{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/'>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'INFO': 20, 'ERROR': 40, 'SUCCESS': 25, 'DEBUG': 10}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fa49180b828>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fa490fadf98>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fa493bfb2f0>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fa49180d510>>}, {}]
+[2018-06-23 13:35:37,347][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 789
+[2018-06-23 13:35:44,892][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py] [line:878] [base] Exception while resolving variable 'what' in template 'send_excel.html'.
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'what'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [what] in [{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: POST '/upload'>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'INFO': 20, 'ERROR': 40, 'SUCCESS': 25, 'DEBUG': 10}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fa490fb5ba8>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fa490f6f1d0>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fa490fbcd90>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fa490fbce18>>}, {}]
+[2018-06-23 13:35:44,919][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /upload HTTP/1.1" 200 789
+[2018-06-23 13:36:39,369][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 13:36:39,370][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:36:39,370][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 13:36:39,440][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:36:39,442][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 13:36:39,449][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:36:40,201][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 730
+[2018-06-23 13:36:48,334][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /upload HTTP/1.1" 200 730
+[2018-06-23 13:38:03,316][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /upload HTTP/1.1" 200 730
+[2018-06-23 13:40:47,705][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 13:40:47,706][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:40:47,707][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 13:40:47,789][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:40:47,800][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.011) SHOW FULL TABLES; args=None
+[2018-06-23 13:40:47,808][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:40:49,476][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 798
+[2018-06-23 13:40:57,169][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /upload HTTP/1.1" 200 798
+[2018-06-23 13:54:52,001][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 13:54:52,003][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:54:52,005][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT VERSION(); args=None
+[2018-06-23 13:54:52,059][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:54:52,063][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SHOW FULL TABLES; args=None
+[2018-06-23 13:54:52,071][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:54:53,241][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py] [line:118] [exception] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/Desktop/mianshi/debang/download_excel/views.py", line 14, in index
+    return render(request,"send_excel.html")
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post_apply_data' not found. 'post_apply_data' is not a valid view function or pattern name.
+[2018-06-23 13:54:53,404][ERROR   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 500 120140
+[2018-06-23 13:55:57,930][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 13:55:57,930][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:55:57,931][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 13:55:57,980][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 13:55:57,991][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.011) SHOW FULL TABLES; args=None
+[2018-06-23 13:55:57,998][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 13:55:59,078][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 1321
+[2018-06-23 13:56:07,801][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/middleware/csrf.py] [line:153] [csrf] Forbidden (CSRF token missing or incorrect.): /upload/
+[2018-06-23 13:56:07,824][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /upload/ HTTP/1.1" 403 2513
+[2018-06-23 13:56:31,972][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/middleware/csrf.py] [line:153] [csrf] Forbidden (CSRF token missing or incorrect.): /upload/
+[2018-06-23 13:56:31,977][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /upload/ HTTP/1.1" 403 2513
+[2018-06-23 13:56:32,993][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/middleware/csrf.py] [line:153] [csrf] Forbidden (CSRF token missing or incorrect.): /upload/
+[2018-06-23 13:56:33,007][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /upload/ HTTP/1.1" 403 2513
+[2018-06-23 13:56:33,952][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/middleware/csrf.py] [line:153] [csrf] Forbidden (CSRF token missing or incorrect.): /upload/
+[2018-06-23 13:56:33,969][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /upload/ HTTP/1.1" 403 2513
+[2018-06-23 14:01:27,606][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/middleware/csrf.py] [line:153] [csrf] Forbidden (CSRF token missing or incorrect.): /upload/
+[2018-06-23 14:01:27,623][WARNING ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "POST /upload/ HTTP/1.1" 403 2513
+[2018-06-23 14:22:56,674][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.008) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 14:22:56,675][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:22:56,675][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 14:22:56,734][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:22:56,743][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.009) SHOW FULL TABLES; args=None
+[2018-06-23 14:22:56,760][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.014) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 14:22:58,356][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 1154
+[2018-06-23 14:24:50,051][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 1154
+[2018-06-23 14:24:52,546][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.004) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 14:24:52,548][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:24:52,554][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SELECT VERSION(); args=None
+[2018-06-23 14:24:52,698][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:24:52,710][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.011) SHOW FULL TABLES; args=None
+[2018-06-23 14:24:52,718][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 14:25:48,769][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 14:25:48,780][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:25:48,784][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SELECT VERSION(); args=None
+[2018-06-23 14:25:48,866][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:25:48,867][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 14:25:48,875][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 14:25:51,083][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 1154
+[2018-06-23 14:29:10,420][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 14:29:10,422][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:29:10,431][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SELECT VERSION(); args=None
+[2018-06-23 14:29:10,604][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:29:10,607][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SHOW FULL TABLES; args=None
+[2018-06-23 14:29:10,631][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.005) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 14:29:13,816][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 1153
+[2018-06-23 14:33:19,154][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 14:33:19,155][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:33:19,156][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT VERSION(); args=None
+[2018-06-23 14:33:55,460][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 14:33:55,461][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:33:55,464][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SELECT VERSION(); args=None
+[2018-06-23 14:33:55,513][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:33:55,514][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 14:33:55,533][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.015) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 14:33:56,425][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 1158
+[2018-06-23 14:35:21,625][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 14:35:21,626][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:35:21,627][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT VERSION(); args=None
+[2018-06-23 14:35:21,669][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:35:21,671][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 14:35:21,677][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 14:35:34,179][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 1158
+[2018-06-23 14:37:49,359][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 14:37:49,360][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:37:49,361][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT VERSION(); args=None
+[2018-06-23 14:37:49,406][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:37:49,407][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SHOW FULL TABLES; args=None
+[2018-06-23 14:37:49,411][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 14:37:50,372][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 1158
+[2018-06-23 14:39:31,281][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.010) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 14:39:31,283][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:39:31,285][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.002) SELECT VERSION(); args=None
+[2018-06-23 14:41:47,235][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.012) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 14:41:47,240][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.003) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:41:47,241][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 14:42:04,906][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-06-23 14:42:04,906][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:42:04,907][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.000) SELECT VERSION(); args=None
+[2018-06-23 14:42:04,996][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-06-23 14:42:05,033][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.036) SHOW FULL TABLES; args=None
+[2018-06-23 14:42:05,083][DEBUG   ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/db/backends/utils.py] [line:111] [utils] (0.035) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-06-23 14:42:08,106][INFO    ] [/home/python/.virtualenvs/py_debang/lib/python3.5/site-packages/django/core/servers/basehttp.py] [line:124] [basehttp] "GET / HTTP/1.1" 200 1156

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>上传文件</title>
+    <script src="/static/js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+
+<h2>基于ajax上传文件</h2>
+{% csrf_token %}
+
+<p><input type="file" id="f"></p>
+<button class="ajax_btn">上传</button>
+
+
+<script>
+    $(".ajax_btn").click(function () {
+        var formdata = new FormData();
+        //formdata.append("user", $("#user").val());
+        formdata.append("csrfmiddlewaretoken", $("[name='csrfmiddlewaretoken']").val());
+        formdata.append("f", $("#f")[0].files[0]);
+        $.ajax({
+            url: "/upload/",
+            type: "post",
+            data: formdata,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                alert("上传成功！")
+            }
+        })
+
+    })
+</script>
+
+</body>
+</html>
