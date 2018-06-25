@@ -6,17 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>上传文件</title>
     <script src="/static/js/jquery-1.12.4.min.js"></script>
-</head>
-<body>
-
-<h2>基于ajax上传文件</h2>
-{% csrf_token %}
-
-<p><input type="file" id="f"></p>
-<button class="ajax_btn">上传</button>
-
-
-<script>
+    <script>
     $(".ajax_btn").click(function () {
         var formdata = new FormData();
         //formdata.append("user", $("#user").val());
@@ -35,6 +25,17 @@
 
     })
 </script>
+</head>
+<body>
+
+<h2>基于ajax上传文件</h2>
+{% csrf_token %}
+
+<p><input type="file" id="f"></p>
+<button class="ajax_btn">上传</button>
+
+
+
 
 </body>
 </html>

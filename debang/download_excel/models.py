@@ -6,7 +6,7 @@ logger = logging.getLogger(__name__)
 
 # Create your models here.
 
-
+# 员工表
 class People(models.Model):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4(), editable=False)
     NAME = models.CharField(max_length=30, verbose_name="姓名")
@@ -20,7 +20,7 @@ class People(models.Model):
             )
         ]
 
-
+# 组织表
 class Orgnz(models.Model):
     name = models.CharField(unique=True, max_length=50)
     # people = models.ManyToManyField(People,verbose_name="员工")
